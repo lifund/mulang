@@ -1,0 +1,22 @@
+{
+  "name": "mulang",
+  "version": "1.0.0",
+  "description": "render multiple client documents with different languages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifund/mulang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifund/mulang/issues"
+  },
+  "homepage": "https://github.com/lifund/mulang#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
