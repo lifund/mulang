@@ -1,0 +1,10 @@
+{
+    "mode": "class",
+    "language": ["kor","eng"],
+    "document":{
+        "title": [
+            "안녕하세요!",
+            "Hello!"
+        ]
+    }
+}
