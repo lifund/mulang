@@ -1,6 +1,6 @@
 {
-  "name": "mulang",
-  "version": "1.0.0",
+  "name": "@lifund/mulang",
+  "version": "1.0.2",
   "description": "render multiple client documents with different languages",
   "main": "index.js",
   "scripts": {
@@ -10,13 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/lifund/mulang.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "johnny",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lifund/mulang/issues"
   },
   "homepage": "https://github.com/lifund/mulang#readme",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+  },
+  "keywords": [
+    "html",
+    "convert",
+    "json",
+    "text",
+    "content",
+    "render",
+    "middleware",
+    "multi",
+    "language"
+  ]
 }

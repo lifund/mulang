@@ -72,8 +72,10 @@
  * ```
  */
 
+
+
 module.exports = class Mulang {
-    
+    fs = require('fs');
 
     // [ help() ] STARTS
     static help = () => {
