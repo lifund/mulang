@@ -5,10 +5,27 @@ A simple, multi-language HTML renderer.
 > When writing a text content of multiple HTML documents with different languages, editing element by element is a pain in the ass. 
 > Mulang helps you to render multiple HTML files simultaneously with a single JSON file.
 
+## Short Example.
+### Source HTML
+```html
+<h1 class="m__landing_title"></h1>
+```
+### Target JSON
+```json
+{ "landing_title": "Hello World!" }
+```
+### Result (String)
+```html 
+<h1 class="m__landing_title">Hello World!</h1>
+```
+
 ## why mulang?
 1. Cleaner structure for your multi-language projects.
 2. Easy to bind with popular frameworks.
 3. Easy to edit contents for non-coders.
+
+\- Coming Soon \-
+**Mulang Interactive** | JSON editor for non-coder. GUI provided on a browser. HTML file is rendered interactively.
 
 ---
 
@@ -23,7 +40,8 @@ let mulang = new Mulang({
     // Or pass file path for HTML and JSON file.
     sourceHtmlPath='/path/to/file',targetJsonPath='/path/to/file',
     
-    // One of path/file must be provided. If both provided, HTML String and JSON Object will be used.
+    // One of path/file must be provided. 
+    // If both provided, HTML String and JSON Object will be used.
 
     // ( under update below, not effective yet. Do not edit. )
     documentMode="html",parseMode="class",insertMode="prepend"
@@ -41,25 +59,6 @@ const result = mulang.render();
 if(req.body.lang == 'eng') res.send(result.eng);
 if(req.body.lang == 'kor') res.send(result.kor);
 ```
-
----
-## Data processing example.
-### Source HTML
-```html
-<h1 class="m__landing_title"></h1>
-```
-### Target JSON
-```json
-{ "landing_title": "Hello World!" }
-```
-### Result (String)
-```html 
-<h1 class="m__landing_title">Hello World!</h1>
-```
-
----
-\- Coming Soon \-
-**Mulang Interactive** | JSON editor for non-coder. GUI provided on a browser. HTML file is rendered interactively.
 
 ---
 ## How to write a target JSON files
