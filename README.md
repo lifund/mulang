@@ -15,17 +15,31 @@ A simple, multi-language HTML renderer.
 # Documentation
 
 ## Initiation
-For detailed jsdoc documentation, generate an instance.
-
+When initiating, you have to 
 ```js
 let mulang = new Mulang({
-   // You can pass HTML String and JSON Object directly.  
-   sourceHtml='',targetJson='',
-   // Or pass file path for HTML and JSON file.
-   sourceHtmlPath='',targetJsonPath='',
-   // If both provided, HTML String and JSON Object will be used.
-   documentMode="html",parseMode="class",insertMode="prepend"
+    // You can pass HTML String and JSON Object directly.  
+    sourceHtml='<!DOCTYPE html> ···',targetJson='{m__foo: "text content"}',
+    // Or pass file path for HTML and JSON file.
+    sourceHtmlPath='/path/to/file',targetJsonPath='/path/to/file',
+    
+    // One of path/file must be provided. If both provided, HTML String and JSON Object will be used.
+
+    // ( under update below, not effective yet. Do not edit. )
+    documentMode="html",parseMode="class",insertMode="prepend"
 });
+```
+
+## Renderf
+Simple!
+Execute render function, get a result with JSON!
+```js
+const result = mulang.render();
+
+// { "eng":"<!DOCTYPE html> ···", "kor":"<!DOCTYPE html> ···" }
+
+if(req.body.lang == 'eng') res.send(result.eng);
+if(req.body.lang == 'kor') res.send(result.kor);
 ```
 
 ---
