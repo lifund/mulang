@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 /**
  * # Mulang
  * # A simple, multi-language HTML renderer.
@@ -18,7 +20,7 @@
  *   sourceHtmlPath='',targetJsonPath='',
  *   // If both provided, HTML String and JSON Object will be used.
  *   documentMode="html",parseMode="class",insertMode="prepend"
- * })
+ * });
  * ```
  * 
  * ---
@@ -72,7 +74,6 @@
  * ```
  */
 
-const fs = require('fs');
 module.exports = class Mulang {
 
     // [ help() ] STARTS
