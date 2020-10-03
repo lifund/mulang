@@ -48,7 +48,8 @@ let mulang = new Mulang({
 });
 ```
 
-## Renderf
+---
+## Render HTML file
 Simple!
 Execute render function, get a result with JSON!
 ```js
