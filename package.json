@@ -1,6 +1,6 @@
 {
   "name": "@lifund/mulang",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "render multiple client documents with different languages",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,7 @@
     "url": "https://github.com/lifund/mulang/issues"
   },
   "homepage": "https://github.com/lifund/mulang#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "keywords": [
     "html",
     "convert",
