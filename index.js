@@ -202,7 +202,6 @@ module.exports = class Mulang {
             this.targetJson.meta.languages.forEach(lang => {
                 let html = '';
                 for(let i=0; i<range.length; i++){
-                    console.log();
                     if(this.targetJson.contents[range[i].name]){
                         html += this.htmlString.slice(range[i].sliceStart,range[i].sliceEnd) +this.targetJson.contents[range[i].name][lang] ; 
                     } else {
