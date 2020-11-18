@@ -25,7 +25,7 @@ module.exports = class Mulang {
         }else{
         }*/
         
-        this.htmlString = sourceHtml;
+        this.sourceHtml = sourceHtml;
         this.targetJson = targetJson;
         this.htmlString = this.sourceHtml.replace(/\s+/g,' ');
 
