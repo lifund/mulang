@@ -14,10 +14,18 @@ module.exports = class Mulang {
         this.parseMode = parseMode;
         this.insertMode = insertMode;
         // Files.
-        this.sourceHtml = fs.readFileSync(sourceHtmlPath,'utf-8');
-        this.htmlString = this.sourceHtml.replace(/\s+/g,' ');
-        this.jsonFile = fs.readFileSync(targetJsonPath,'utf-8');
-        this.targetJson = JSON.parse(this.jsonFile);
+        if(sourceHtmlPath!=''){
+            this.sourceHtml = fs.readFileSync(sourceHtmlPath,'utf-8');
+            this.htmlString = this.sourceHtml.replace(/\s+/g,' ');
+        }else{
+            this.htmlString = sourceHtml;
+        }
+        if(targetJsonPath!=''){
+            this.jsonFile = fs.readFileSync(targetJsonPath,'utf-8');
+            this.targetJson = JSON.parse(this.jsonFile);
+        }else{
+            this.targetJson = targetJson;
+        }
         // Critical values.
         this.index = undefined;
         this.range = undefined;
