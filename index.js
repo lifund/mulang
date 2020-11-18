@@ -16,7 +16,6 @@ module.exports = class Mulang {
         // Files.
         /*if(sourceHtmlPath!=''){
             this.sourceHtml = fs.readFileSync(sourceHtmlPath,'utf-8');
-            this.htmlString = this.sourceHtml.replace(/\s+/g,' ');
         }else{
         }
 
@@ -28,6 +27,7 @@ module.exports = class Mulang {
         
         this.htmlString = sourceHtml;
         this.targetJson = targetJson;
+        this.htmlString = this.sourceHtml.replace(/\s+/g,' ');
 
         // Critical values.
         this.index = undefined;
